@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>@ViewBag.Title - Auto3 Anúncios de Automóveis</title>
+        <meta charset="utf-8" />
+        <link href="~/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="carros usados, anúncios carros, vendas carros, autos usados, carros a venda, stand, classificados, anúncios">
+        <meta name="description" content="Auto3 - encontra anúncios de carros usados e auto usados, vendas de carros e classificados de carros.">
+        <meta http-equiv="Content-Language" content="pt" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/jquery")
+    </head>
+    <body>
+        <header>
+            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/">Auto 3 - Anúncios de Automóveis</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <form class="navbar-form navbar-right" role="form">
+                            <div class="form-group">
+                                <input type="email" placeholder="Endereço de email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="Palavra passe" class="form-control">
+                            </div>
+                            <button type="submit" class="btn btn-success">Entrar</button>
+                        </form>
+                    </div><!--/.navbar-collapse -->
+                </div>
+            </div>
+        </header>
+        <div>
+            @RenderBody()
+        </div>
+        <div class="container">
+            <hr>
+            <footer>
+                <p>&copy; Auto 3 2014 - Projecto PI 1314v Grupo 3</p>
+                <p>Marco Morais (35894), João Costa (29492), Délia Pereira (31399)</p>
+            </footer>
+        </div>
+        <!-- Colocado no fim do documento para que o tempo de carregamento da pagina seja menor -->
+        @Scripts.Render("~/bundles/bootstrap")
+    </body>
+</html>

@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Detalhes do anúncio";
+}
+<p></p>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Título do anúncio</h3>
+        </div>
+        <div class="panel-body">
+            <div class="container">
+                <div class="pull-left advertdetails">
+                    <img src="/Images/anuncios/1.jpg" class="media-object" alt="Sample Image" width="640" height="480">
+                </div>
+                <div>                    
+                    <p><label>Marca:</label> Renault</p>
+                    <p><label>Modelo:</label> Clio</p>            
+                </div>    
+            </div>
+            <div>
+                <form>
+                    <label>Avalie o Anuncio</label>
+                    <input type="radio" name="radiobtn" value="0">0
+                    <input type="radio" name="radiobtn" value="1">1
+                    <input type="radio" name="radiobtn"value="2">2
+                    <input type="radio" name="radiobtn"value="3">3
+                    <input type="radio" name="radiobtn"value="4">4
+                    <input type="radio" name="radiobtn"value="5">5
+                </form>
+                <form>
+                        <p>Comentários</p>
+                        <input id="textbox" type="text" placeholder="Escreva Comentário....">
+                        <button type="submit" class="btn">Enviar</button>
+                </form>
+                <div class="pagination">
+                    <ul>
+                        <li class="active"><label>Comentario1</label></li>
+                        <li class="active"><label>Comentario1</label></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
