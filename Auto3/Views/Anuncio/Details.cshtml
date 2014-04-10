@@ -31,8 +31,8 @@
                     </div> 
                </div>   
             </div>
-            <div class="panel-heading">
-                <div>
+            <div>
+                <div class="col-md-5">
                     <form>
                         <label>Avalie o Anuncio</label>
                         <input type="radio" name="radiobtn" value="0">0
@@ -43,24 +43,31 @@
                         <input type="radio" name="radiobtn"value="5">5
                     </form>
                 </div>
-                <div >
-                    <p><label>Rating:</label>4.5</p>
-                </div>
                 <div>
-                    <form>
-                        <p>Comentários</p>
-                        <input id="textbox" type="text" placeholder="Escreva Comentário....">
-                        <button type="submit" class="btn">Enviar</button>
+                    <p><label>Rating: </label>4.5</p>
+                </div>
+                <div >
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-1 control-label">Comente:</label>
+                            <div class="col-sm-11">
+                                <input class="form-control"  id="textbox"  type="text" placeholder="Escreva Comentário....">
+                            </div>
+                            <div class="col-sm-11">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </div>
+                        
                     </form>
                 </div>
-                <div class ="panel">
-                    <div style="height:150px;line-height:1em;overflow:scroll;padding:1px;">
-                        <ul>Comentário 1</ul>
-                        <ul>Comentário 2</ul>
-                        <ul>Comentário 3</ul>
-                        <ul>Comentário 4</ul>
-                        <ul>Comentário 5</ul>
-                        <ul>Comentário 6</ul>
+                <div>
+                    <div class="bg-info" style="height:150px;line-height:1em;overflow:scroll;padding:1px;">
+                        <ul class="list-unstyled">Comentário 1</ul> 
+                        <ul class="list-unstyled">Comentário 2</ul>
+                        <ul class="list-unstyled">Comentário 3</ul>
+                        <ul class="list-unstyled">Comentário 4</ul>
+                        <ul class="list-unstyled">Comentário 5</ul>
+                        <ul class="list-unstyled">Comentário 6</ul>
                     </div>
 
                 </div>
