@@ -31,44 +31,56 @@
                     </div> 
                </div>   
             </div>
-            <div>
-                <div class="col-md-5">
-                    <form>
-                        <label>Avalie o Anuncio</label>
-                        <input type="radio" name="radiobtn" value="0">0
-                        <input type="radio" name="radiobtn" value="1">1
-                        <input type="radio" name="radiobtn"value="2">2
-                        <input type="radio" name="radiobtn"value="3">3
-                        <input type="radio" name="radiobtn"value="4">4
-                        <input type="radio" name="radiobtn"value="5">5
-                    </form>
+            <div >
+                <div class="container">
+                    <div  class="col-sm-5">
+                        <form>
+                            <label>Avalie o Anuncio </label>
+                            <input type="radio" name="radiobtn" value="0">0
+                            <input type="radio" name="radiobtn" value="1">1
+                            <input type="radio" name="radiobtn"value="2">2
+                            <input type="radio" name="radiobtn"value="3">3
+                            <input type="radio" name="radiobtn"value="4">4
+                            <input type="radio" name="radiobtn"value="5">5
+                        </form>
+                    </div>
+                    <div>
+                        <p><label>Rating: </label>4.5</p>
+                    </div>
                 </div>
-                <div>
-                    <p><label>Rating: </label>4.5</p>
-                </div>
-                <div >
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <label class="col-sm-1 control-label">Comente:</label>
+                
+                <div class="container">
+                    <div>
+                        <form class="form-group" action="~/Anuncio/SetComment" method="post">
                             <div class="col-sm-11">
                                 <input class="form-control"  id="textbox"  type="text" placeholder="Escreva Comentário....">
                             </div>
+
                             <div class="col-sm-11">
-                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                <button type="submit" class="btn btn-primary">Comentar</button>
                             </div>
-                        </div>
-                        
-                    </form>
-                </div>
-                <div>
-                    <div class="bg-info" style="height:150px;line-height:1em;overflow:scroll;padding:1px;">
-                        <ul class="list-unstyled">Comentário 1</ul> 
-                        <ul class="list-unstyled">Comentário 2</ul>
-                        <ul class="list-unstyled">Comentário 3</ul>
-                        <ul class="list-unstyled">Comentário 4</ul>
-                        <ul class="list-unstyled">Comentário 5</ul>
-                        <ul class="list-unstyled">Comentário 6</ul>
+                        </form>
                     </div>
+                </div>
+                <div class="container">
+                    <div class="col-sm-11">
+                        <div class="bg-info" style="height:200px;overflow:scroll;">
+                            <blockquote>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                              <footer>Jose</footer>
+                            </blockquote>
+
+                            <blockquote>
+                              <p>Comentario 2.</p>
+                              <footer>António</footer>
+                            </blockquote>
+
+                            <blockquote>
+                              <p>Comentario 3.</p>
+                              <footer>Manuel</footer>
+                            </blockquote>
+                         </div>
+                     </div>
 
                 </div>
             </div>
