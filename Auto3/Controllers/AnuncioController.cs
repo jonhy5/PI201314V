@@ -109,18 +109,23 @@ namespace Auto3.Controllers
                 return View();
             }
         }
+
+
+        // POST: /Anuncio/Edit/5/SetComment
+
         [HttpPost]
-        public ActionResult InsertComment(int id, FormCollection collection) {
+        public ActionResult SetComment( FormCollection collection)
+        {
             try
             {
+                // TODO: Add update logic here
+
                 return RedirectToAction("Index");
             }
             catch
             {
-
                 return View();
             }
-        
         }
     }
 }
