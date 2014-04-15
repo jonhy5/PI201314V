@@ -1,0 +1,127 @@
+﻿@{
+    ViewBag.Title = "Detalhes do anúncio";
+}
+<p></p>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Título do anúncio</h3>
+        </div>
+        <div class="panel-body">
+            <div class="container">
+                <div class="pull-left advertdetails">
+                    <img src="/Images/anuncios/1.jpg" class="media-object" alt="Sample Image" width="580" height="420">
+                </div>
+<<<<<<< HEAD
+                <div>                    
+                    <p><label>Titulo:</label> Auncio muito bom </p>
+                    <p><label>Marca:</label> Renault</p>
+                    <p><label>Modelo:</label> Clio</p>
+                    <p><label>Versão:</label> 2.0</p>
+                    <p><label>Ano:</label> 2001</p>
+                    <p><label>Km:</label> 100000</p>
+                    <p><label>Combustível:</label> Gasoelo</p>
+                    <p><label>Distrito:</label> Lisboa</p>
+                    <p><label>Concelho:</label> Lisboa</p>
+                    <p><label>Preço:</label> 5000€</p> 
+                    <p><label>Negociável:</label>Não Negocíavel</p>
+                    <p><label>Validade:</label>10/09/2015</p>            
+                </div>    
+            </div>
+            <div>
+                <form>
+                    <label>Avalie o Anuncio</label>
+                    <input type="radio" name="radiobtn" value="0">0
+                    <input type="radio" name="radiobtn" value="1">1
+                    <input type="radio" name="radiobtn"value="2">2
+                    <input type="radio" name="radiobtn"value="3">3
+                    <input type="radio" name="radiobtn"value="4">4
+                    <input type="radio" name="radiobtn"value="5">5
+                </form>
+                <form action="../InsertComment/1" method="post">
+                        <p>Comentários</p>
+                        <input id="textbox" type="text" placeholder="Escreva Comentário....">
+                        <button type="submit" class="btn">Enviar</button>
+                </form>
+                <div class="pagination">
+                    <ul>
+                        <li class="active"><label>Comentario1</label></li>
+                        <li class="active"><label>Comentario1</label></li>
+                    </ul>
+=======
+                <div>
+                    <h3 >Informação sobre a viatura</h3>
+                
+                    <div >                    
+                        <p><label>Preço:</label> 8.500</p>
+                        <p><label>Negociável:</label> Não</p>
+                        <p><label>Marca:</label> Renault</p>
+                        <p><label>Modelo:</label> Clio</p>  
+                        <p><label>Versão:</label> 1.2</p>
+                        <p><label>Ano:</label> 2003</p>           
+                        <p><label>Kms:</label> 120000</p>           
+                        <p><label>Combustível:</label> Gasóleo</p>  
+                        <p><label>Localização:</label> Lisboa</p>
+                        <p><label>Anunciante:</label> Grande Stand</p>
+                        <p><label>Validade:</label> 2014-12-30</p>
+                               
+                    </div> 
+               </div>   
+            </div>
+            <div >
+                <div class="container">
+                    <div  class="col-sm-5">
+                        <form>
+                            <label>Avalie o Anuncio </label>
+                            <input type="radio" name="radiobtn" value="0">0
+                            <input type="radio" name="radiobtn" value="1">1
+                            <input type="radio" name="radiobtn"value="2">2
+                            <input type="radio" name="radiobtn"value="3">3
+                            <input type="radio" name="radiobtn"value="4">4
+                            <input type="radio" name="radiobtn"value="5">5
+                        </form>
+                    </div>
+                    <div>
+                        <p><label>Rating: </label>4.5</p>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div>
+                        <form class="form-group" action="~/Anuncio/SetComment" method="post">
+                            <div class="col-sm-11">
+                                <input class="form-control"  id="textbox"  type="text" placeholder="Escreva Comentário....">
+                            </div>
+
+                            <div class="col-sm-11">
+                                <button type="submit" class="btn btn-primary">Comentar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="col-sm-11">
+                        <div class="bg-info" style="height:200px;overflow:scroll;">
+                            <blockquote>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                              <footer>Jose</footer>
+                            </blockquote>
+
+                            <blockquote>
+                              <p>Comentario 2.</p>
+                              <footer>António</footer>
+                            </blockquote>
+
+                            <blockquote>
+                              <p>Comentario 3.</p>
+                              <footer>Manuel</footer>
+                            </blockquote>
+                         </div>
+                     </div>
+
+>>>>>>> d11df85484a806555e9e51da10d6514ba05fdc84
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
