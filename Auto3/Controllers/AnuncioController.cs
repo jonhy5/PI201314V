@@ -109,5 +109,18 @@ namespace Auto3.Controllers
                 return View();
             }
         }
+        [HttpPost]
+        public ActionResult InsertComment(int id, FormCollection collection) {
+            try
+            {
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+
+                return View();
+            }
+        
+        }
     }
 }
