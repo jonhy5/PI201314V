@@ -13,6 +13,7 @@ namespace Auto3.Controllers
 
         public ActionResult Index()
         {
+            MvcApplication._anuncioModel.GetAll();
             return View();
         }
 
