@@ -11,5 +11,13 @@ namespace DomainFactory
                 return Type.GetType("DAL.AnuncioRepository,DAL");
             }
         }
+
+        public static Type ComentarioRepositoryTypeName
+        {
+            get 
+            {
+                return Type.GetType("DAL.ComentarioRepository,DAL");
+            }
+        }
     }
 }

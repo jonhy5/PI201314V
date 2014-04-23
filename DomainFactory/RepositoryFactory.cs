@@ -9,5 +9,11 @@ namespace DomainFactory.RepoFactory
             Type t = Config.AnuncioRepositoryTypeName;
             return (T)Activator.CreateInstance(t);
         }
+
+        public static T GetInstanceComentario<T>()
+        {
+            Type t = Config.ComentarioRepositoryTypeName;
+            return (T)Activator.CreateInstance(t);
+        }
     }
 }
